@@ -86,7 +86,7 @@ rd_logs/                # Simulation logs
 ```bibtex
 @software{herho2025rdspiral,
   author = {Herho, Sandy H. S.},
-  title = {rd_spiral: Reaction-diffusion spiral wave solver},
+  title = {rd_spiral: 2D Reaction-diffusion spiral wave solver},
   year = {2025},
   url = {https://github.com/sandyherho/rd_spiral}
 }
