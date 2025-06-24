@@ -1,6 +1,6 @@
 # rd_spiral
 
-Reaction-diffusion spiral wave solver using pseudo-spectral methods.
+2D reaction-diffusion spiral wave solver using pseudo-spectral methods.
 
 ## Installation
 
