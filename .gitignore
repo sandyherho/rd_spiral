@@ -2,26 +2,39 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+*.pyo
 *.egg-info/
 dist/
 build/
 *.egg
 
+# Virtual environments
+venv/
+env/
+ENV/
+
 # IDE
 .vscode/
 .idea/
 *.swp
-
-# OS
 .DS_Store
-Thumbs.db
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Virtual environments
-venv/
-env/
-.env
+# Output directories (local only)
+rd_outputs/
+rd_logs/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*~
+
+# PyPI artifacts (not needed)
+.pypirc
+MANIFEST

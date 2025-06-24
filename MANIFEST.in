@@ -1,4 +1,3 @@
 include README.md
 include LICENSE
-include pyproject.toml
-recursive-include configs *.txt
+recursive-include rd_spiral/configs *.txt

@@ -1,5 +1,6 @@
-#!/usr/bin/env python
-"""Minimal setup.py for compatibility."""
-from setuptools import setup
+from setuptools import setup, find_packages
 
-setup()
+setup(
+    packages=find_packages(),
+    include_package_data=True,
+)
