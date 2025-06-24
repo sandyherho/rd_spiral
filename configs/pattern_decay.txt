@@ -1,0 +1,29 @@
+# Pattern Decay - Homogeneous Equilibrium  
+# High diffusion causes pattern to decay
+
+# Diffusion coefficients (high)
+d1 = 0.5
+d2 = 0.5
+
+# Reaction parameter
+beta = 1.0
+
+# Domain and grid (smaller)
+L = 10.0
+n = 64
+
+# Time integration
+t_start = 0.0
+t_end = 100.0
+dt = 0.1
+
+# Numerics
+method = RK45
+rtol = 1e-6
+atol = 1e-9
+
+# Initial conditions
+num_spiral_arms = 1
+
+# Output
+save_netcdf = true

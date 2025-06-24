@@ -1,0 +1,30 @@
+# Turbulent Spiral Waves - Chaotic Dynamics
+# Mismatched diffusion and specific parameters create spiral breakup and turbulence
+# Author: Sandy Herho <sandy.herho@email.ucr.edu>
+
+# Diffusion coefficients (mismatched to induce instability)
+d1 = 0.05   # Lower diffusion for u
+d2 = 0.15   # Higher diffusion for v
+
+# Reaction parameter (promotes spiral breakup)
+beta = 0.7
+
+# Domain and grid (larger domain to see turbulent patterns)
+L = 40.0
+n = 256
+
+# Time integration (longer time to develop turbulence)
+t_start = 0.0
+t_end = 300.0
+dt = 0.1
+
+# Numerics
+method = RK45
+rtol = 1e-6
+atol = 1e-9
+
+# Initial conditions (multiple arms for more complex dynamics)
+num_spiral_arms = 3
+
+# Output
+save_netcdf = true
