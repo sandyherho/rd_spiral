@@ -1,4 +1,4 @@
-# rd_spiral
+# rd-spiral
 
 [![DOI](https://zenodo.org/badge/1007472234.svg)](https://doi.org/10.5281/zenodo.15727991)
 
@@ -37,7 +37,7 @@ rd-spiral configs/stable_spiral.txt
 rd-spiral configs/turbulent_spiral.txt
 
 # Python API
-from rd_spiral import ReactionDiffusionSolver, parse_config
+from rd-spiral import ReactionDiffusionSolver, parse_config
 
 config = parse_config('configs/stable_spiral.txt')
 solver = ReactionDiffusionSolver(config)
@@ -54,25 +54,6 @@ $$\frac{\partial v}{\partial t} = D_2\nabla^2 v + v - u^2v - v^3 - \beta(u^3 + u
 
 where $D_1$, $D_2$ are diffusion coefficients and $\beta$ is the reaction parameter.
 
-## Examples
-
-### Stable Spiral
-```bash
-rd-spiral configs/stable_spiral.txt
-```
-- Low diffusion (D₁ = D₂ = 0.1)
-- Forms rotating spiral wave
-- Reaches dynamic equilibrium
-
-
-
-### Turbulent Spiral
-```bash
-rd-spiral configs/turbulent_spiral.txt
-```
-- Mismatched diffusion (D₁ = 0.05, D₂ = 0.15)
-- Shows chaotic dynamics
-- Spiral breakup
 
 ## Output Structure
 
@@ -90,7 +71,7 @@ rd_logs/                # Simulation logs
 ```bibtex
 @article{rdspiral,
   author = {Herho, S. H. S. and Anwar, I. P. A. and Suwarman, R.},
-  title = {{rd\_spiral: An open-source Python library for learning 2D reaction-diffusion dynamics through pseudo-spectral method}},
+  title = {{rd-spiral: An open-source Python library for learning 2D reaction-diffusion dynamics through pseudo-spectral method}},
   year = {202x},
   journal={xxx},
   volume={xxx},
