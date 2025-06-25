@@ -1,5 +1,7 @@
 # rd_spiral
 
+[![DOI](https://zenodo.org/badge/1007472234.svg)](https://doi.org/10.5281/zenodo.15727991)
+
 2D reaction-diffusion spiral wave solver using pseudo-spectral methods.
 
 ## Installation
