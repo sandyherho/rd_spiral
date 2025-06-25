@@ -90,7 +90,7 @@ rd_logs/                # Simulation logs
 ```bibtex
 @article{rdspiral,
   author = {Herho, S. H. S. and Anwar, I. P. A. and Suwarman, R.},
-  title = {{An open-source Python library for learning 2D reaction-diffusion dynamics through pseudo-spectral method}},
+  title = {{rd\_spiral: An open-source Python library for learning 2D reaction-diffusion dynamics through pseudo-spectral method}},
   year = {202x},
   journal={xxx},
   volume={xxx},
