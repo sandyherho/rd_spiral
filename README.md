@@ -64,6 +64,8 @@ rd-spiral configs/stable_spiral.txt
 - Forms rotating spiral wave
 - Reaches dynamic equilibrium
 
+
+
 ### Turbulent Spiral
 ```bash
 rd-spiral configs/turbulent_spiral.txt
@@ -86,20 +88,14 @@ rd_logs/                # Simulation logs
 ## Citation
 
 ```bibtex
-@software{herho2025rdspiral,
-  author = {Herho, Sandy H. S.},
-  title = {rd_spiral: 2D Reaction-diffusion spiral wave solver},
-  year = {2025},
-  url = {https://github.com/sandyherho/rd_spiral}
+@article{rdspiral,
+  author = {Herho, S. H. S. and Anwar, I. P. A. and Suwarman, R.},
+  title = {{An open-source Python library for learning 2D reaction-diffusion dynamics through pseudo-spectral method}},
+  year = {202x},
+  journal={xxx},
+  volume={xxx},
+  number={xxx},
+  doi={xxx}
 }
 ```
 
-## Author
-
-Sandy Herho  
-University of California, Riverside  
-sandy.herho@email.ucr.edu
-
-## License
-
-MIT License
