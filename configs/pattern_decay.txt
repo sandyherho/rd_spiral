@@ -27,3 +27,8 @@ num_spiral_arms = 1
 
 # Output
 save_netcdf = true
+
+# Enhanced features
+check_equilibrium = true      # Analyze equilibrium (pattern will decay)
+save_checkpoints = false      # Not needed for this short simulation
+checkpoint_interval = 25.0    # Would save at t=25,50,75 if enabled

@@ -1,30 +1,56 @@
-# Turbulent Spiral Waves - Chaotic Dynamics
-# Mismatched diffusion and specific parameters create spiral breakup and turbulence
-# Author: Sandy Herho <sandy.herho@email.ucr.edu>
+# Non-Equilibrium Spiral Dynamics with Robust Output Handling
+# ===========================================================
+# Configuration optimized for systems that exhibit persistent
+# chaotic or turbulent behavior without reaching equilibrium
+#
+# Research Context: Investigation of spiral wave breakup and
+# spatiotemporal chaos in excitable media
+# Purpose: Demonstrate robust handling of non-equilibrium states
 
-# Diffusion coefficients (mismatched to induce instability)
-d1 = 0.05   # Lower diffusion for u
-d2 = 0.15   # Higher diffusion for v
+# Physical Parameters for Chaotic Regime
+# --------------------------------------
+# Strongly mismatched diffusion coefficients induce instability
+d1 = 0.03    # Very low diffusion for activator species
+d2 = 0.20    # High diffusion for inhibitor species
 
-# Reaction parameter (promotes spiral breakup)
-beta = 0.7
+# Reaction parameter in chaotic regime
+beta = 0.65  # Promotes spiral breakup and turbulence
 
-# Domain and grid (larger domain to see turbulent patterns)
-L = 40.0
-n = 256
+# Extended Spatial Domain
+# -----------------------
+# Larger domain to capture multiple interacting spiral cores
+L = 50.0     # Extended domain for complex patterns
+n = 256      # High resolution for accurate turbulent dynamics
 
-# Time integration (longer time to develop turbulence)
+# Extended Time Integration
+# -------------------------
+# Long simulation to observe persistent non-equilibrium behavior
 t_start = 0.0
-t_end = 300.0
+t_end = 500.0    # Extended time for chaotic dynamics
 dt = 0.1
 
-# Numerics
+# Numerical Parameters
+# --------------------
 method = RK45
 rtol = 1e-6
 atol = 1e-9
 
-# Initial conditions (multiple arms for more complex dynamics)
-num_spiral_arms = 3
+# Initial Conditions
+# ------------------
+# Multiple spiral arms for enhanced complexity
+num_spiral_arms = 4
 
-# Output
+# Output Configuration
+# --------------------
 save_netcdf = true
+
+# Enhanced Features for Non-Equilibrium Systems
+# ---------------------------------------------
+# Disable equilibrium checking since we expect chaos
+check_equilibrium = false
+
+# Enable checkpointing for this long simulation
+save_checkpoints = true
+checkpoint_interval = 100.0  # Save state every 100 time units
+
+
