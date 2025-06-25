@@ -1,4 +1,4 @@
-# rd-spiral: An open-source Python library for learning 2D reaction-diffusion dynamics through pseudo-spectral method
+# rd-spiral: An open-source Python library for learning 2D reaction-diffusion dynamics through pseudo-spectral methods
 
 [![DOI](https://zenodo.org/badge/1007472234.svg)](https://doi.org/10.5281/zenodo.15727991)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
